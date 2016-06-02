@@ -1,0 +1,15 @@
+@mixin hideText {
+  /* Hide the text.. */
+  text-indent: 201%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin logoBg($logoURL) {
+  background: {
+    image: url($logoURL);
+    size: contain;
+    repeat: no-repeat;
+    position: center center;
+  }
+}
