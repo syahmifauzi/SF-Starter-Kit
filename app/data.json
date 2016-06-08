@@ -1,0 +1,24 @@
+{
+  "_comment": {
+    "1)": "Edit Your Default Site Data Here..",
+    "2)": "You can add/delete/modify data as you wish.."
+  },
+
+  "site": [{
+    "title": "Frontend Starter Kit",
+    "author": "Syahmi Fauzi",
+    "url": "http://www.syahmifauzi.com/",
+    "description": "A starter kit for frontend workflow..",
+    "keywords": "starter, kit, frontend, workflow, etc, etc.."
+  }],
+
+  "user": [{
+    "name": "Syahmi Fauzi",
+    "email": "msf@syahmifauzi.com",
+    "username": {
+      "twitter": "_syahmifauzi",
+      "instagram": "_syahmifauzi",
+      "github": "syahmifauzi"
+    }
+  }]
+}

@@ -1,0 +1,24 @@
+---
+page:
+  title: "{ Oops!! 404 }"
+---
+{% extends "templates/default.nunjucks" %}
+
+{% block content %}
+
+  {% include "pages/includes/header.html" %}
+
+  <div class="wrapper">
+    <div class="innerText">
+      <h1>{{ page.title }}</h1>
+      <p>You lost buddy?<br />
+        This page doesn't exist.. <br />
+        It's okay, let's go back to <br/>
+        <a href="/">Homepage</a><br />
+      </p>
+    </div>
+  </div>
+
+  {% include "pages/includes/footer.html" %}
+
+{% endblock %}

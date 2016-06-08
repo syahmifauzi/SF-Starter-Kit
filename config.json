@@ -1,0 +1,8 @@
+{
+  "_comment": "Quick setting for things in gulpfile.js",
+
+  "path": {
+    "input": "./app/",
+    "output": "./build/"
+  }
+}

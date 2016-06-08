@@ -1,0 +1,50 @@
+---
+page:
+  title: "Page Title"
+  author: "Page Author"
+  keywords: "Page, Keywords"
+  description: "Page Description"
+site_id: homepage
+---
+{% extends "templates/default.nunjucks" %}
+
+{% block header %}
+  {% include "pages/includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="lets-start">
+    Let's Start!!
+  </div>
+
+  {% for data in site %}
+    <h2>Site Settings</h2>
+    <ul>
+      <li>Title: {{ data.title }}</li>
+      <li>Author: {{ data.author }}</li>
+      <li>Url: <a href="{{ data.url }}" target="_blank">{{ data.url | replace("http://", "")}}</a></li>
+      <li>Description: {{ data.description }}</li>
+      <li>Keywords: {{ data.keywords }}</li>
+    </ul>
+  {% endfor %}
+
+  {% for data in user %}
+    <h2>About Me??</h2>
+    <ul>
+      <li>Name: {{ data.name }}</li>
+      <li>E-mail: {{ data.email }}</li>
+      <li>Keep in touch:</li>
+      <ul>
+        <li><a href="https://twitter.com/{{ data.username.twitter }}" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/{{ data.username.instagram }}" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/{{ data.username.github }}" target="_blank">Github</a></li>
+      </ul>
+    </ul>
+  {% endfor %}
+
+{% endblock %}
+
+{% block footer %}
+  {% include "pages/includes/footer.html" %}
+{% endblock %}
